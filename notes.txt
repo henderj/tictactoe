@@ -35,4 +35,8 @@ display game in simple terminal interface
 -computer input
     start off with random empty spot, just to make sure game works and you have time
     if you have time, make it smarter
+    i had time
+    it now checks for wins and blocks player wins
+    if neither of those are possible, it just picks a random empty spot
 
+time to make: about 3 hours and 30 minutes
