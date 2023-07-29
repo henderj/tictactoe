@@ -7,3 +7,9 @@ To play the game, ensure you have python installed, and run the following comman
 ```bash
 python tictactoe.py
 ```
+
+## How to Run Tests ##
+To run the tests, ensure you have python installed, and run the following command in the terminal:
+```bash
+python test.py
+```
