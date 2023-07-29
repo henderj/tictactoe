@@ -1,0 +1,38 @@
+display game in simple terminal interface
+-a function to display the grid
+-an array to keep track of game state
+    0 = empty space, 1 = X, 2 = O
+-a function to check for wins
+    since there are exactly 8 ways to win (3 horizontal, 3 vertical, 2 diagonal), hardcoding the win checks is fine. No need to come up with some fancy algorithm or anything.
+    this would involve some redundant checking (if a row was already checked previously and contained 2 X's and 1 O, for example, this row could never convert into a winning state)
+    however, this is negligible (there are only 8 checks anyway)
+-a function to check if grid is full
+    none of the array elements are 0
+-start of game
+    ask player if they want to go first
+    do game loop while return value is 0
+    when game finished, display win/tie message
+    ask if they want to play again
+        if so, start this function again (technically runs risk of stack overflow from recursion, but this can reasonably be ignored, at least for now)
+        else, display end message and quit
+-a game loop
+    if it's the player's turn
+        do player input
+    else
+        do computer input
+    check for wins/ties
+        if player wins, return 1
+        if computer wins, return 2
+        if tie, return 3
+        otherwise, return 0
+
+-player input
+    ask the player where they want to play
+    check if spot is filled
+        if so, warn player and ask again
+        else, fill in spot
+
+-computer input
+    start off with random empty spot, just to make sure game works and you have time
+    if you have time, make it smarter
+
